@@ -23,12 +23,12 @@ $(document).ready(function() {
 
           var stringpieces = arg.split(/\s/);
 
-          $("a,input,button").each(function() {
+       /*   $("a,input,button").each(function() {
             if($(this)[0].tagName == "INPUT") {
                 // look for the text in INPUT fields
             }
           });
-
+*/ 
           break;
         case "scroll":
           // what do we do on scroll?
