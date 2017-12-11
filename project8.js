@@ -26,7 +26,6 @@ $(document).ready(function() {
           $("a,input,button").each(function() {
             if($(this)[0].tagName == "INPUT") {
                 // look for the text in INPUT fields
-
             }
           });
 
