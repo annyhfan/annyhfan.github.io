@@ -2,7 +2,7 @@
 $(document).ready(function() {
    $("#commandbutton").click(function() {
     var potentialcommand = $("#command").val();
-
+    console.log("do something button was clicked on!");
     console.log(potentialcommand);
 
     var re = /^(click|scroll|enter)\s(.*)/i;
