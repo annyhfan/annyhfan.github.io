@@ -5,9 +5,6 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="project8.css">
 <script src = "project8.js"> </script>
-
-
-
 <style>
     * {
     font-family: Verdana, Arial, sans-serif;
@@ -141,7 +138,7 @@
     <div id="results">
       <span id="final_span" class="final"></span>
       <span id="interim_span" class="interim"></span>
-      <p>
+      <p> </p>
     </div>
     <div class="center">
       <div class="sidebyside" style="text-align:right">
@@ -151,6 +148,7 @@
           Press Control-C to copy text.<br>(Command-C on Mac.)
         </div>
       </div>
+    </div>
       <div class="sidebyside">
         <button id="email_button" class="button" onclick="emailButton()">
           Create Email</button>
@@ -159,13 +157,15 @@
           (See chrome://settings/handlers to change.)
         </div>
       </div>
-      <p>
+    <p>
       <div id="div_language">
         <select id="select_language" onchange="updateCountry()"></select>
         &nbsp;&nbsp;
         <select id="select_dialect"></select>
       </div>
-    </div>
+    </p>
+</div>
+
 <p>
 <input type="text" id="command"><input type="button" value="Do something!" id="commandbutton">
 </p>
@@ -175,6 +175,9 @@
 <a href="google.com">Google</a><br>
 <a href="cmu.edu">CMU</a><br>
 </p>
+
+
+
 
 <script>
      var langs =
@@ -453,10 +456,17 @@ $(document).ready(function() {
         console.log("hitting up button");
   })
 });
-</script>
 
+</script>
 </body>
-</html> 
+</html>
+
+
+
+
+
+
+
 
 
 
