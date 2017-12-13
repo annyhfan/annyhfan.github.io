@@ -3,6 +3,7 @@ $(document).ready(function() {
    $("#commandbutton").click(function() {
     var potentialcommand = $("#command").val();
     console.log("do something button was clicked on!");
+    // prints out the value of whatever is in input 
     console.log(potentialcommand);
 
     var re = /^(click|scroll|enter)\s(.*)/i;

@@ -81,6 +81,18 @@
         background-color:transparent;
         padding: 0;
     }
+
+    .scrolldown {
+      position: fixed;
+      right: 0;
+      bottom: 50px;
+      width: 50px;
+      height: 50px;
+      background: #000;
+      color: white;
+      text-align: center;
+      z-index: 98;
+    }
 </style>
 
 <body>
@@ -402,6 +414,16 @@
       copy_info.style.display = 'none';
       email_info.style.display = 'none';
     }
+
+
+
+     $("body").append("<input type='button' class='scrolldown' value='down'>");
+      $(".scrolldown").click(function() {
+        $('html, body').animate({
+            scrollTop: $(document).scrollTop()+150
+        }, 1000);
+        console.log("hitting down button");
+      })
 </script>
 <script src = "project8.js"> </script>
 </body>
