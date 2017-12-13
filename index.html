@@ -455,6 +455,18 @@ $(document).ready(function() {
         }, 1000);
         console.log("hitting up button");
   })
+    // if text is 
+    $(".info, #info").each(function() {
+        if($(this)[0].tagName == "Scroll down") {
+            // look for the text in INPUT fields
+            $('html, body').animate({
+                scrollTop: $(document).scrollTop()+150
+            }, 1000);
+            console.log("scrolling down");
+          }
+    });
+
+
 });
 
 </script>
