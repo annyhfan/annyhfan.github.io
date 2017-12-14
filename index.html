@@ -456,15 +456,20 @@ $(document).ready(function() {
         console.log("hitting up button");
   })
     // if text is 
-    $("input, a").each(function() {
-        if(final_transcript == "Scroll down") {
+   /* $("input, a").each(function() {
+        if (recognizing) {
+        recognizing = false;
+        recognition.stop();
+        }
+*/ 
+        if (final_transcript == "Scroll down") {
             // look for the text in INPUT fields
             $('html, body').animate({
                 scrollTop: $(document).scrollTop()+150
             }, 1000);
             console.log("scrolling down");
           }
-    });
+  //  });
 
 
 });
