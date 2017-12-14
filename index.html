@@ -243,6 +243,7 @@
                          ['yue-Hant-HK', '粵語 (香港)']],
      ['日本語',           ['ja-JP']],
      ['Lingua latīna',   ['la']]];
+     
      // setting the language
     for (var i = 0; i < langs.length; i++) {
       select_language.options[i] = new Option(langs[i][0], i);
@@ -261,6 +262,8 @@
       }
       select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
     }
+
+
 
     var create_email = false;
     var final_transcript = '';
@@ -457,12 +460,11 @@ $(document).ready(function() {
   })
     // if text is 
     $(".final").each(function() {
+        console.log("going through");
         if(final_transcript == "Scroll down") {
+            console.log(final_transcript);
             // look for the text in INPUT fields
-            $('html, body').animate({
-                scrollTop: $(document).scrollTop()+150
-            }, 1000);
-            console.log("scrolling down");
+            $(".scrolldown").trigger('click');
           }
     });
 
