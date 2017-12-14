@@ -462,8 +462,10 @@ $(document).ready(function() {
         recognizing = false;
         recognition.stop();
         }
-*/ 
-        if (final_transcript === "Scroll down") {
+
+
+*/ $("#results").each(function() {
+        if (final_span.innerHTML === "Scroll down") {
             console.log("scrolling");
             // look for the text in INPUT fields
             $('html, body').animate({
@@ -471,7 +473,7 @@ $(document).ready(function() {
             }, 1000);
             console.log("scrolling down");
           }
-  //  });
+    });
 
 
 });
