@@ -466,14 +466,14 @@ $(document).ready(function() {
 
 */ $("div, #results").each(function() {
     console.log("going through function");
-        if (final_span.innerHTML === "Scroll down") {
-            console.log("scrolling");
-            // look for the text in INPUT fields
-            $('html, body').animate({
-                scrollTop: $(document).scrollTop()+150
-            }, 1000);
-            console.log("scrolling down");
-          }
+    if (final_transcript.innerHTML === "Scroll down") {
+        console.log("scrolling");
+        // look for the text in INPUT fields
+        $('html, body').animate({
+            scrollTop: $(document).scrollTop()+150
+        }, 1000);
+        console.log("scrolling down");
+      }
     });
 
 
